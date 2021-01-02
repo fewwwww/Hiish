@@ -1,23 +1,25 @@
-www.quantion.com | .io
+stackoverbulk.com
+    basically stack means take multiple steroids during a cycle, bulk means get bigger, and stackoverflow
 Overall:
-    A forum for quantitative traders
+    A stackoverflow-like forum for juiced bodybuilders
     function:
         user:
-            post new ideas
-            like, comment, save post
-            ask for referral
+            post new posts
+            like, comment, track post
+            ask for help
             login, register
-            trading activity(just like eToro)
+            cycle activity(just like eToro)
         post:
-            catalogs: strategy, data, learn, job, showoff, other
-            upload image, link to code
+            catalogs: steroid, sarm, tip, train, supplement(link to examine.com)
+            upload image, stats about training, dosage
+            calculator for dosage
             MARKDOWN
-            license: public, share each other strategy
+            update
 
 Framework for this project:
     Front-end: React(still learning, may take 1 more month)
     Back-end: Django(may only take 3 days)
-    Database: undetermined
+    Database: undetermined (need collect data for the steroid~)
     Deployment: probably Azure
 
 !!!FINISH IT BEFORE MAY!!!
