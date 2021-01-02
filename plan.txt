@@ -1,0 +1,23 @@
+www.quantion.com | .io
+Overall:
+    A forum for quantitative traders
+    function:
+        user:
+            post new ideas
+            like, comment, save post
+            ask for referral
+            login, register
+            trading activity(just like eToro)
+        post:
+            catalogs: strategy, data, learn, job, showoff, other
+            upload image, link to code
+            MARKDOWN
+            license: public, share each other strategy
+
+Framework for this project:
+    Front-end: React(still learning, may take 1 more month)
+    Back-end: Django(may only take 3 days)
+    Database: undetermined
+    Deployment: probably Azure
+
+!!!FINISH IT BEFORE MAY!!!
