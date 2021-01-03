@@ -10,7 +10,7 @@ Overall:
             login, register
             cycle activity(just like eToro)
         post:
-            catalogs: steroid, sarm, PCT, tip, train, supplement(link to examine.com)
+            catalogs: steroid, sarm, tip, train, supplement(link to examine.com)
             upload image, stats about training, dosage
             calculator for dosage
             MARKDOWN
