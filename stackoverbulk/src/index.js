@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 
 ReactDOM.render(
-    <PostList posts={posts}/>,
+    <HomePage/>,
   document.getElementById('root')
 );
 

@@ -26,7 +26,7 @@ class HomePage extends Component {
   render() {
     const { posts, searchfield } = this.state;
     const filteredPosts = posts.filter(post =>{
-      return post.name.toLowerCase().includes(searchfield.toLowerCase());
+      return post.title.toLowerCase().includes(searchfield.toLowerCase());
     })
     return !posts.length ?
       <h1>Loading</h1> :
@@ -42,4 +42,4 @@ class HomePage extends Component {
   }
 }
 
-export default App;
+export default HomePage;

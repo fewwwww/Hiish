@@ -1,6 +1,6 @@
 export const posts = [
     {
-        userid: 2,
+        userid: 1,
         id: 1,
         title: 'what is pct',
         body: 'i dont know what is pct',
@@ -14,7 +14,7 @@ export const posts = [
         tag: 'steroid'
     },
     {
-        userid: 2,
+        userid: 3,
         id: 3,
         title: 'train my bicep',
         body: 'the best movement',
