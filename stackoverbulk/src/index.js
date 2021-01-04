@@ -5,6 +5,7 @@ import Post from './components/Post';
 import {posts} from './components/posts';
 import PostList from './components/PostList';
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
 
 ReactDOM.render(
     <PostList posts={posts}/>,
