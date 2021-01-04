@@ -24,4 +24,4 @@ Framework for this project:
     Deployment: probably Azure
 
 !!!FINISH IT BEFORE MAY!!!
-01.15: homepage
+2020.01.15: homepage
