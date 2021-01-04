@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Post from './components/Post';
-import {posts} from './components/posts';
-import PostList from './components/PostList';
+import HomePage from './containers/HomePage'
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 

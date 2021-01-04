@@ -5,10 +5,10 @@ import {posts} from './posts';
 const PostList = ({posts}) => {
     const postComponent = posts.map((post,i) => {
         return <Post
+                userid = {posts[i].userid}
                 id = {posts[i].id}
                 title = {posts[i].title}
-                description = {posts[i].description}
-                tag = {posts[i].tag}
+                body = {posts[i].body}
                 /> })
     return (
         <div>
