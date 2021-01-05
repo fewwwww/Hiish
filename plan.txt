@@ -18,7 +18,7 @@ Overall:
 
 Framework for this project:
     Front-end: React(still learning, may take 1 more month)
-        pages: posting, user, home, resources(types, legends' cycle, dosage, basic)
+        pages: posting, user, home(static page done with searching), resources(types, legends' cycle, dosage, basic)
     Back-end: Django(may only take 3 days)
     Database: undetermined (need collect data for the steroid~)
     Deployment: probably Azure
