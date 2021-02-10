@@ -1,24 +1,31 @@
 .left {
     position: relative;
     float: left;
-    width: 15%
+    width: 13%;
+    overflow:hidden;
+    position:relative;
 }
 .notification {
     position: absolute;
-    top: -1%;
-    left: -1%;
+    top: 0%;
+    left: 2%;
     z-index: 10;
 }
 .btm {
-    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
     overflow: hidden;
-    text-overflow: "----";
 }
 
 .friendRequest {
-    padding-left: 2%;
+    padding-left: 2.5%;
 }
 
 .friendMessage {
-    padding-left: 2%;
+    padding-left: 2.5%;
+}
+
+.right {
+    padding-left: 1%;
 }
