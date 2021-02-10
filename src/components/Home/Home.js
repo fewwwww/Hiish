@@ -1,14 +1,13 @@
 import './Home.css';
-import logo from '../Navbar/hiish.svg';
-import plus from '../Navbar/plus.svg';
-import search from '../Navbar/search.svg';
 import Navbar from "../Navbar/Navbar";
+import ContentList from "../ContentList/ContentList";
 
 function Home() {
   return (
     <div className="flex w-screen h-screen">
-        <Navbar/>
-        <div className="w-5/6">2</div>
+        <Navbar />
+        <ContentList />
+        <div className="bg-pink-50 flex flex-wrap flex-col justify-around shadow-lg" style={{width: "10%"}}>2</div>
     </div>
   );
 }

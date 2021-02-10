@@ -5,7 +5,7 @@ import search from './search.svg';
 
 function Navbar() {
   return (
-    <div className="bg-pink-50 w-1/6 flex flex-wrap flex-col justify-around shadow-lg">
+    <div className="bg-pink-50 flex flex-wrap flex-col justify-around shadow-lg" style={{width: "20%"}}>
         <div>
             <img className="mx-auto w-48 rounded-3xl shadow-md border-2 border-red-100" src={profile}/>
         </div>
