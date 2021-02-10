@@ -1,14 +1,13 @@
 .left {
-    position: relative;
     float: left;
     width: 13%;
-    overflow:hidden;
     position:relative;
+    margin-right: 0.5rem;
 }
 .notification {
     position: absolute;
-    top: 0%;
-    left: 2%;
+    top: -5%;
+    left: -3%;
     z-index: 10;
 }
 .btm {
@@ -18,14 +17,20 @@
     overflow: hidden;
 }
 
-.friendRequest {
+.friendRequest, .friendMessage {
     padding-left: 2.5%;
 }
 
-.friendMessage {
-    padding-left: 2.5%;
+.profile {
+    min-width:100%;
+    min-height:100%;
+    height:auto;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%) translateX(-50%);
 }
 
-.right {
-    padding-left: 1%;
+div .friendMessage:active , div .friendRequest:active{
+    background: ghostwhite;
 }

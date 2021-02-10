@@ -1,7 +1,7 @@
-import logo from '../static/hiish.svg';
-import profile from '../static/profile.jpg';
-import plus from '../static/plus.svg';
-import search from '../static/search.svg';
+import logo from '../../static/hiish.svg';
+import profile from '../../static/profile.jpg';
+import plus from '../../static/plus.svg';
+import search from '../../static/search.svg';
 
 function Navbar() {
   return (

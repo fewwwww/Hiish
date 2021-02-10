@@ -1,0 +1,3 @@
+div .chat:active , div .contact:active, div .feed:active{
+    background: lavenderblush;
+}
