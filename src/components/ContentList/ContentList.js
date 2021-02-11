@@ -1,4 +1,4 @@
-import friendRequest from '../static/friendRequest.svg'
+import friendRequest from '../../static/friendRequest.svg'
 import './ContentList.css';
 import Datas from './Datas'
 import React, { useState, useEffect } from 'react';
