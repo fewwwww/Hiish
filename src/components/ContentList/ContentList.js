@@ -11,10 +11,10 @@ function ContentList() {
     const loadFriends = () => {
         const friends = Datas()
         const friendsList = friends.map(friend =>
-            <div className="friendMessage flex flex-row h-1/6 py-6 border-b border-gray-100">
+            <div key={friend.id} className="friendMessage flex flex-row h-1/6 py-6 border-b border-gray-100">
                 <div className="left h-full w-1/12 flex justify-end">
-                    <text
-                        className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">{friend.notification}</text>
+                    <p
+                        className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">{friend.notification}</p>
                     <img className="profile rounded-2xl" src={window.location.origin + friend.imgurl}/>
                 </div>
                 <div className="right w-4/5 flex flex-col justify-around">
@@ -31,7 +31,7 @@ function ContentList() {
         <div style={{width: "70%", marginLeft: '20%'}}>
             <div className="friendRequest flex flex-row h-1/6 py-6 border-b border-gray-100">
                 <div className="left h-full w-1/12 flex justify-end">
-                    <text className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">1</text>
+                    <p className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">1</p>
                     <img className="profile rounded-2xl" src={friendRequest}/>
                 </div>
                 <div className="right w-4/5 flex flex-col justify-around">
