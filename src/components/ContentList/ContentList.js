@@ -19,7 +19,6 @@ function ContentList() {
                 </div>
                 <div className="right w-4/5 flex flex-col justify-around">
                     <div className="top flex flex-row justify-between">
-                        <div></div>
                         <div className="text-3xl font-semibold">{friend.name}</div>
                         <div>{changeTime(friend.time)}</div>
                     </div>
