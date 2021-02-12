@@ -15,7 +15,7 @@ function ContentList() {
                 <div className="left h-full w-1/12 flex justify-end">
                     <p
                         className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">{friend.notification}</p>
-                    <img className="profile rounded-2xl" src={window.location.origin + friend.imgurl}/>
+                    <img className="profile rounded-2xl invisible xl:visible" src={window.location.origin + friend.imgurl}/>
                 </div>
                 <div className="right w-4/5 flex flex-col justify-around">
                     <div className="top flex flex-row justify-between">
@@ -32,7 +32,7 @@ function ContentList() {
             <div className="friendRequest flex flex-row h-1/6 py-6 border-b border-gray-100">
                 <div className="left h-full w-1/12 flex justify-end">
                     <p className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">1</p>
-                    <img className="profile rounded-2xl" src={friendRequest}/>
+                    <img className="profile rounded-2xl invisible xl:visible" src={friendRequest}/>
                 </div>
                 <div className="right w-4/5 flex flex-col justify-around">
                     <div className="top flex flex-row justify-between">
