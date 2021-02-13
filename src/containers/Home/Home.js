@@ -10,7 +10,7 @@ import search from '../../static/search.svg';
 function Home(props) {
   return (
     <div className="flex w-screen h-screen">
-        <Navbar onRouteChange={props.onRouteChange} logo={logo} profile={profile} plus={plus} search={search}/>
+        <Navbar onRouteChange={props.onRouteChange} route={props.route} logo={logo} profile={profile} plus={plus} search={search}/>
         <ContentList />
         <Btmbar />
     </div>

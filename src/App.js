@@ -22,13 +22,13 @@ function App() {
     if (route === 'home'){
     return (
         <div>
-            <Home onRouteChange={onRouteChange}/>
+            <Home onRouteChange={onRouteChange} route={route}/>
         </div>
     )}
     if (route === 'search'){
     return (
         <div>
-            <Search/>
+            <Search onRouteChange={onRouteChange} route={route}/>
         </div>
     )}
 }
