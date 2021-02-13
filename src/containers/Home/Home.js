@@ -1,7 +1,7 @@
 import './Home.css';
-import Navbar from "../Navbar/Navbar";
-import ContentList from "../ContentList/ContentList";
-import Btmbar from "../Btmbar/Btmbar";
+import Navbar from "../../components/Navbar/Navbar";
+import ContentList from "../../components/ContentList/ContentList";
+import Btmbar from "../../components/Btmbar/Btmbar";
 import logo from '../../static/hiish.svg';
 import profile from '../../static/profile.jpg';
 import plus from '../../static/plus.svg';

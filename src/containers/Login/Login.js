@@ -1,5 +1,5 @@
-import Navbar from "../Navbar/Navbar";
-import Btmbar from "../Btmbar/Btmbar";
+import Navbar from "../../components/Navbar/Navbar";
+import Btmbar from "../../components/Btmbar/Btmbar";
 import defaultprofile from '../../static/defaultprofile.svg';
 import logo from "../../static/hiish.svg";
 import React from "react";
@@ -25,7 +25,7 @@ function Login(props) {
                 <input className="border-b-2 border-indigo-100 p-3 m-3 w-full my-3" placeholder='type anything, not specifically the word anything' type="text"/>
                 <input className="border-b-2 border-indigo-100 p-3 m-3 w-full my-3" onChange={onPassword} placeholder='just set "password" as the password' type="password" />
             </div>
-            <button onClick={changeRoute} className="bg-red-100 p-5 m-5 rounded-3xl shadow-md" type="button">submit</button>
+            <button onClick={changeRoute} className="transition duration-500 ease-in-out hover:-translate-y-1 hover:bg-red-200 delay-75 bg-red-100 p-5 m-5 rounded-3xl shadow-md" type="button">submit</button>
         </div>
         <Btmbar />
     </div>
