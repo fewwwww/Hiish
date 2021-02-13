@@ -3,28 +3,32 @@ import Home from './containers/Home/Home.js';
 import Login from "./containers/Login/Login.js";
 import Search from "./containers/Search/Search";
 import './tailwind.output.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function App() {
     const [route, setRoute] = useState('login')
     const onRouteChange = (route) => {
         setRoute(route)
+        console.log(route)
     }
+
 
     if (route === 'login'){
     return (
         <div>
             <Login onRouteChange={onRouteChange}/>
         </div>
-    )}else if (route === 'search'){
+    )}
+    if (route === 'home'){
     return (
         <div>
-            <Search onRouteChange={onRouteChange}/>
+            <Home onRouteChange={onRouteChange}/>
         </div>
-    )} else if (route === 'home'){
+    )}
+    if (route === 'search'){
     return (
         <div>
-            <Home />
+            <Search/>
         </div>
     )}
 }

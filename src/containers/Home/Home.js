@@ -7,10 +7,10 @@ import profile from '../../static/profile.jpg';
 import plus from '../../static/plus.svg';
 import search from '../../static/search.svg';
 
-function Home() {
+function Home(props) {
   return (
     <div className="flex w-screen h-screen">
-        <Navbar logo={logo} profile={profile} plus={plus} search={search}/>
+        <Navbar onRouteChange={props.onRouteChange} logo={logo} profile={profile} plus={plus} search={search}/>
         <ContentList />
         <Btmbar />
     </div>

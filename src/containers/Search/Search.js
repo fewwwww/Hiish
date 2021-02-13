@@ -4,17 +4,13 @@ import logo from '../../static/hiish.svg';
 import profile from '../../static/profile.jpg';
 import plus from '../../static/plus.svg';
 import search from '../../static/search.svg';
+import React from 'react';
 
-function Search(props) {
-    const changeRoute = () => {
-        props.onRouteChange('search')
-        console.log(111)
-    }
-
+function Search() {
     return (
         <div className="flex w-screen h-screen">
-            <Navbar changeRoute={changeRoute} searchActivated={1} logo={logo} profile={profile} plus={plus} search={search}/>
-            <div></div>
+            <Navbar logo={logo} profile={profile} plus={plus} search={search}/>
+            <></>
             <Btmbar />
         </div>
     );
