@@ -1,10 +1,10 @@
-function Datas() {
-  let friends = [
+function Groups() {
+  let groups = [
       {
         id: 1,
-        imgurl: '/img/profile2.jpg',
+        imgurl: '/img/group.jpg',
         notification: 2,
-        name: 'X集团领导',
+        name: '2017届男性校友',
         time: new Date() + 1,
         message: '明天去财务结一下这个月的工资'
       },
@@ -49,7 +49,7 @@ function Datas() {
         message: '666'
       }
   ]
-    return friends
+    return groups
 }
 
-export default Datas;
+export default Groups;
