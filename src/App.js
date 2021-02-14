@@ -4,6 +4,9 @@ import Login from "./containers/Login/Login.js";
 import Search from "./containers/Search/Search";
 import './tailwind.output.css';
 import React, { useState } from 'react';
+import NewFriend from "./containers/NewFriend/NewFriend";
+import Contact from "./containers/Contact/Contact";
+import Feed from "./containers/Feed/Feed";
 
 function App() {
     const [route, setRoute] = useState('login')
@@ -29,6 +32,24 @@ function App() {
     return (
         <div>
             <Search onRouteChange={onRouteChange} route={route}/>
+        </div>
+    )}
+    if (route === 'newfriend'){
+    return (
+        <div>
+            <NewFriend onRouteChange={onRouteChange} route={route}/>
+        </div>
+    )}
+    if (route === 'contact'){
+    return (
+        <div>
+            <Contact onRouteChange={onRouteChange} route={route}/>
+        </div>
+    )}
+    if (route === 'feed'){
+    return (
+        <div>
+            <Feed onRouteChange={onRouteChange} route={route}/>
         </div>
     )}
 }

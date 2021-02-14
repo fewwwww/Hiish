@@ -1,9 +1,9 @@
-function SearchList() {
+function NewFriendList() {
     return (
         <div style={{width: "70%", marginLeft: '20%'}}>
-            Search
+            FriendList
         </div>
     );
 }
 
-export default SearchList;
+export default NewFriendList;

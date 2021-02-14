@@ -1,9 +1,9 @@
-function SearchList() {
+function FeedList() {
     return (
         <div style={{width: "70%", marginLeft: '20%'}}>
-            Search
+            FeedList
         </div>
     );
 }
 
-export default SearchList;
+export default FeedList;

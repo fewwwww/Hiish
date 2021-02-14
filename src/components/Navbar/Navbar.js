@@ -1,9 +1,14 @@
 function Navbar(props) {
     const changeToSearch = () => {
-        try {
             props.onRouteChange('search')
-        } finally {
-        }
+    }
+
+    const changeToNewfriend = () => {
+            props.onRouteChange('newfriend')
+    }
+
+    const changeToHome = () => {
+            props.onRouteChange('home')
     }
 
     if (props.route === 'search'){
@@ -12,33 +17,47 @@ function Navbar(props) {
                 <div>
                     <img className="mx-auto w-48 rounded-3xl shadow-md border-2 border-red-100" src={props.profile}/>
                 </div>
-                <div>
-                    <img className="mx-auto w-64" src={props.logo}/>
+                <div onClick={changeToHome} className="cursor-pointer">
+                    <img className="animate-pulse mx-auto w-64" src={props.logo}/>
                 </div>
                 <div className="flex justify-evenly">
-                    <div className="mx-auto object-scale-down">
+                    <div onClick={changeToNewfriend} className="cursor-pointer mx-auto object-scale-down">
                         <img src={props.plus}/>
-                    </div>
-                    <div className="mx-auto object-scale-down border-b-8 border-black">
-                        <img src={props.search}/>
                     </div>
                 </div>
             </div>
-    );} else {
+    );}
+    if (props.route === 'newfriend'){
     return (
             <div className="bg-pink-50 flex flex-wrap flex-col justify-around shadow-xl fixed h-full" style={{width: "20%", top: 0, left: 0}}>
                 <div>
                     <img className="mx-auto w-48 rounded-3xl shadow-md border-2 border-red-100" src={props.profile}/>
                 </div>
+                <div onClick={changeToHome} className="cursor-pointer">
+                    <img className="animate-pulse mx-auto w-64" src={props.logo}/>
+                </div>
+                <div className="flex justify-evenly">
+                    <div onClick={changeToSearch} className="cursor-pointer mx-auto object-scale-down">
+                        <img src={props.search}/>
+                    </div>
+                </div>
+            </div>
+    );}
+    else {
+    return (
+            <div className="bg-pink-50 flex flex-wrap flex-col justify-around shadow-xl fixed h-full" style={{width: "20%", top: 0, left: 0}}>
                 <div>
+                    <img className="mx-auto w-48 rounded-3xl shadow-md border-2 border-red-100" src={props.profile}/>
+                </div>
+                <div onClick={changeToHome} className="cursor-pointer">
                     <img className="mx-auto w-64" src={props.logo}/>
                 </div>
                 <div className="flex justify-evenly">
-                    <div className="mx-auto object-scale-down">
+                    <div onClick={changeToNewfriend} className="cursor-pointer mx-auto object-scale-down">
                         <img src={props.plus}/>
                     </div>
-                    <div className="mx-auto object-scale-down">
-                        <img onClick={changeToSearch} src={props.search}/>
+                    <div onClick={changeToSearch} className="cursor-pointer mx-auto object-scale-down">
+                        <img src={props.search}/>
                     </div>
                 </div>
             </div>

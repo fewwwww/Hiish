@@ -5,16 +5,16 @@ import profile from '../../static/profile.jpg';
 import plus from '../../static/plus.svg';
 import search from '../../static/search.svg';
 import React from 'react';
-import SearchList from '../../components/SearchList/SearchList'
+import NewFriendList from '../../components/NewFriendList/NewFriendList'
 
-function Search(props) {
+function NewFriend(props) {
     return (
         <div className="flex w-screen h-screen">
             <Navbar onRouteChange={props.onRouteChange} route={props.route} logo={logo} profile={profile} plus={plus} search={search}/>
-            <SearchList />
-            <Btmbar onRouteChange={props.onRouteChange} route={props.route}/>
+            <NewFriendList />
+            <Btmbar onRouteChange={props.onRouteChange} route={props.route} />
         </div>
     );
 }
 
-export default Search;
+export default NewFriend;

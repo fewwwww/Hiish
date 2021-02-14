@@ -27,7 +27,7 @@ function Login(props) {
             </div>
             <button onClick={changeRoute} className="transition duration-500 ease-in-out hover:-translate-y-1 hover:bg-red-200 delay-75 bg-red-100 p-5 m-5 rounded-3xl shadow-md" type="button">submit</button>
         </div>
-        <Btmbar />
+        <Btmbar onRouteChange={props.onRouteChange} route={props.route}/>
     </div>
   );
 }
