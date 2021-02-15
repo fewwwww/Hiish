@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import NewFriend from "./containers/NewFriend/NewFriend";
 import Contact from "./containers/Contact/Contact";
 import Feed from "./containers/Feed/Feed";
+import Profile from "./containers/Profile/Profile"
 
 function App() {
     const [route, setRoute] = useState('login')
@@ -19,7 +20,7 @@ function App() {
     if (route === 'login'){
     return (
         <div>
-            <Login onRouteChange={onRouteChange}/>
+            <Login onRouteChange={onRouteChange} route={route}/>
         </div>
     )}
     if (route === 'home'){
@@ -50,6 +51,12 @@ function App() {
     return (
         <div>
             <Feed onRouteChange={onRouteChange} route={route}/>
+        </div>
+    )}
+    if (route === 'profile'){
+    return (
+        <div>
+            <Profile onRouteChange={onRouteChange} route={route}/>
         </div>
     )}
 }

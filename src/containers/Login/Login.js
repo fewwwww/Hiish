@@ -1,6 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Btmbar from "../../components/Btmbar/Btmbar";
-import defaultprofile from '../../static/defaultprofile.svg';
 import logo from "../../static/hiish.svg";
 import React from "react";
 
@@ -16,7 +15,7 @@ function Login(props) {
 
     return (
     <div className="flex w-screen h-screen">
-        <Navbar profile={defaultprofile}/>
+        <Navbar route={props.route}/>
         <div className="flex flex-col items-center" style={{width: "70%", marginLeft: '20%'}}>
             <img className="py-6" src={logo} />
             <div className="flex flex-col">

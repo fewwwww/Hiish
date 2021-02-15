@@ -15,23 +15,23 @@ function SearchList() {
         const searched = search.map(friend => {
             if (friendOrNot(friend.id)){
                 return(
-                <div key={friend.id} className="friendMessage cursor-pointer flex flex-row h-1/6 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300 text-xl">
+                <div key={friend.id} className="friendMessage cursor-pointer flex flex-row h-36 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300 text-xl">
                     <div className="left h-full w-1/12 flex justify-end">
                         <img className="profile rounded-2xl invisible xl:visible" src={window.location.origin + friend.imgurl}/>
                     </div>
                     <div className="right w-4/5 flex flex-row items-center justify-between">
-                        <div className="text-3xl font-semibold">{friend.name}</div>
+                        <div className="text-3xl font-semibold text-gray-700">{friend.name}</div>
                         <button className="transition duration-500 ease-in-out hover:-translate-y-1 hover:bg-red-200 delay-75 bg-indigo-100 px-3 py-2 m-3 rounded-3xl shadow-md" type="button">say hii</button>
                     </div>
                 </div>)
             } else {
                 return(
-                <div key={friend.id} className="friendMessage cursor-pointer flex flex-row h-1/6 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300 text-xl">
+                <div key={friend.id} className="friendMessage cursor-pointer flex flex-row h-36 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300 text-xl">
                     <div className="left h-full w-1/12 flex justify-end">
-                        <img className="profile rounded-2xl invisible xl:visible" src={window.location.origin + friend.imgurl}/>
+                        <img className="profile rounded-2xl invisible 2xl:visible" src={window.location.origin + friend.imgurl}/>
                     </div>
                     <div className="right w-4/5 flex flex-row items-center justify-between">
-                        <div className="text-3xl font-semibold">{friend.name}</div>
+                        <div className="text-3xl font-semibold text-gray-700">{friend.name}</div>
                         <button className="transition duration-500 ease-in-out hover:-translate-y-1 hover:bg-red-200 delay-75 bg-yellow-100 px-3 py-2 m-3 rounded-3xl shadow-md" type="button">connect</button>
                     </div>
                 </div>)
@@ -44,9 +44,9 @@ function SearchList() {
         const search = Groups()
         const searched = search.map(group => {
                 return(
-                <div key={group.id} className="friendMessage cursor-pointer flex flex-row h-1/6 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300 text-xl">
+                <div key={group.id} className="friendMessage cursor-pointer flex flex-row h-36 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300 text-xl">
                     <div className="left h-full w-1/12 flex justify-end">
-                        <img className="profile rounded-2xl invisible xl:visible" src={window.location.origin + group.imgurl}/>
+                        <img className="profile rounded-2xl invisible 2xl:visible" src={window.location.origin + group.imgurl}/>
                     </div>
                     <div className="right w-4/5 flex flex-row items-center justify-between">
                         <div className="text-3xl font-semibold">{group.name}</div>

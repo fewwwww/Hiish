@@ -12,7 +12,7 @@ function Groups() {
         id: 2,
         imgurl: '/img/profile3.jpg',
         notification: 5,
-        name: '小学同学XXX',
+        name: '阳光向上健身群',
         time: new Date(),
         message: '好兄弟，借我50。'
       },
@@ -20,23 +20,15 @@ function Groups() {
         id: 3,
         imgurl: '/img/profile5.jpg',
         notification: 1,
-        name: '快递小哥',
+        name: '纽约大学学生群',
         time: new Date() + 2,
         message: '你好，你有一个快递到了，请问你现在在家吗，方便来楼下拿一下吗？？？？？？？？？？？？？？？？？？？？？？？？？？？'
-      },
-      {
-        id: 4,
-        imgurl: '/img/profile4.jpg',
-        notification: 99,
-        name: '人肉表情包发送机器',
-        time: new Date() ,
-        message: '[动画表情]'
       },
       {
         id: 5,
         imgurl: '/img/profile6.jpg',
         notification: 1,
-        name: '数学老师',
+        name: '上中东学生群',
         time: new Date(),
         message: '666+666=666'
       },
@@ -44,7 +36,7 @@ function Groups() {
         id: 6,
         imgurl: '/img/profile1.jpg',
         notification: 1,
-        name: '初中同学XXX',
+        name: '游戏群',
         time: new Date(),
         message: '666'
       }
