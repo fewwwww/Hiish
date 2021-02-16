@@ -1,6 +1,6 @@
 # An Allround Chatting App Just Like Wechat
 
-## Try the frontend ``
+## Try the frontend `https://fewwwww.github.io/Hiish/`
 
 ## To run the code:
 ### 1. clone this repo
