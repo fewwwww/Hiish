@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Hiish/static/css/main.5e63f98f.chunk.css",
-    "main.js": "/Hiish/static/js/main.f44f362d.chunk.js",
-    "main.js.map": "/Hiish/static/js/main.f44f362d.chunk.js.map",
+    "main.js": "/Hiish/static/js/main.e1b82a1d.chunk.js",
+    "main.js.map": "/Hiish/static/js/main.e1b82a1d.chunk.js.map",
     "runtime-main.js": "/Hiish/static/js/runtime-main.ab7de11c.js",
     "runtime-main.js.map": "/Hiish/static/js/runtime-main.ab7de11c.js.map",
     "static/js/2.cacd2b3b.chunk.js": "/Hiish/static/js/2.cacd2b3b.chunk.js",
@@ -18,16 +18,22 @@
     "static/media/feed.ffcedef7.svg": "/Hiish/static/media/feed.ffcedef7.svg",
     "static/media/feed1.0f2369f5.JPG": "/Hiish/static/media/feed1.0f2369f5.JPG",
     "static/media/friendRequest.dc91fdc9.svg": "/Hiish/static/media/friendRequest.dc91fdc9.svg",
+    "static/media/group.947e11ba.png": "/Hiish/static/media/group.947e11ba.png",
     "static/media/hiish.8396c611.svg": "/Hiish/static/media/hiish.8396c611.svg",
     "static/media/plus.e597983b.svg": "/Hiish/static/media/plus.e597983b.svg",
     "static/media/UserProfile.css": "/Hiish/static/media/profile.7ed83424.jpg",
+    "static/media/profile1.b543d52c.jpg": "/Hiish/static/media/profile1.b543d52c.jpg",
     "static/media/profile2.6014a001.JPG": "/Hiish/static/media/profile2.6014a001.JPG",
+    "static/media/profile2.c55bdfff.JPG": "/Hiish/static/media/profile2.c55bdfff.JPG",
+    "static/media/profile3.f63a0de8.JPG": "/Hiish/static/media/profile3.f63a0de8.JPG",
+    "static/media/profile4.68b4555b.JPG": "/Hiish/static/media/profile4.68b4555b.JPG",
+    "static/media/profile5.3db5f29a.JPG": "/Hiish/static/media/profile5.3db5f29a.JPG",
     "static/media/search.a73f6176.svg": "/Hiish/static/media/search.a73f6176.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ab7de11c.js",
     "static/js/2.cacd2b3b.chunk.js",
     "static/css/main.5e63f98f.chunk.css",
-    "static/js/main.f44f362d.chunk.js"
+    "static/js/main.e1b82a1d.chunk.js"
   ]
 }
