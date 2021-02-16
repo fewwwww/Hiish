@@ -1,5 +1,6 @@
 # An Allround Chatting App Just Like Wechat
 
+## Try the frontend ``
 
 ## To run the code:
 ### 1. clone this repo
