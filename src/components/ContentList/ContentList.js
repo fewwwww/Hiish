@@ -4,11 +4,17 @@ import Datas from './Datas'
 import React, { useState } from 'react';
 import time from '../../functions/time'
 import back from './back.png'
-import profile from '../../static/defaultprofile.svg'
-import profile1 from '../../static/profile.jpg'
+// import profile from '../../static/defaultprofile.svg'
+// import profile1 from '../../static/profile.jpg'
 import audio from './audio.png'
 import emoji from './emoji.png'
 import more from './more.png'
+import profile from '../img/profile.jpg'
+import profile1 from '../img/profile1.jpg'
+import profile2 from '../img/profile2.JPG'
+import profile3 from '../img/profile3.JPG'
+import profile4 from '../img/profile4.JPG'
+import profile5 from '../img/profile5.JPG'
 
 function ContentList() {
     const [route, setRoute] = useState('content')
@@ -156,25 +162,25 @@ function ContentList() {
         )
     }
 
-    const loadFriends = () => {
-        const friends = Datas()
-        const friendsList = friends.map(friend =>
-            <div onClick={loadChat} key={friend.id} className="friendMessage cursor-pointer flex flex-row h-40 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300">
-                <div className="left h-full w-1/12 flex justify-end">
-                    <p
-                        className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">{friend.notification}</p>
-                    <img className="profile rounded-2xl invisible 2xl:visible" src={window.location.origin + friend.imgurl}/>
-                </div>
-                <div className="right w-4/5 flex flex-col justify-around">
-                    <div className="top flex flex-row justify-between">
-                        <div className="text-3xl font-semibold">{friend.name}</div>
-                        <div>{changeTime(friend.time)}</div>
-                    </div>
-                    <div className="btm text-lg">{friend.message}</div>
-                </div>
-            </div>)
-        return friendsList
-    }
+    // const loadFriends = () => {
+    //     const friends = Datas()
+    //     const friendsList = friends.map(friend =>
+    //         <div onClick={loadChat} key={friend.id} className="friendMessage cursor-pointer flex flex-row h-40 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300">
+    //             <div className="left h-full w-1/12 flex justify-end">
+    //                 <p
+    //                     className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">{friend.notification}</p>
+    //                 <img className="profile rounded-2xl invisible 2xl:visible" src={window.location.origin + friend.imgurl}/>
+    //             </div>
+    //             <div className="right w-4/5 flex flex-col justify-around">
+    //                 <div className="top flex flex-row justify-between">
+    //                     <div className="text-3xl font-semibold">{friend.name}</div>
+    //                     <div>{changeTime(friend.time)}</div>
+    //                 </div>
+    //                 <div className="btm text-lg">{friend.message}</div>
+    //             </div>
+    //         </div>)
+    //     return friendsList
+    // }
 
     return (
         <div style={{width: "70%", marginLeft: '20%'}}>
@@ -191,7 +197,92 @@ function ContentList() {
                     <div className="btm text-lg">有新的好友请求了</div>
                 </div>
             </div>
-            {loadFriends()}
+            {/*{loadFriends()}*/}
+            <div onClick={loadChat} className="friendMessage cursor-pointer flex flex-row h-40 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300">
+                <div className="left h-full w-1/12 flex justify-end">
+                    <p
+                        className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">2</p>
+                    <img className="profile rounded-2xl invisible 2xl:visible" src={profile2}/>
+                </div>
+                <div className="right w-4/5 flex flex-col justify-around">
+                    <div className="top flex flex-row justify-between">
+                        <div className="text-3xl font-semibold">集团领导X</div>
+                        <div>{changeTime(new Date())}</div>
+                    </div>
+                    <div className="btm text-lg">明天去财务结一下这个月的工资</div>
+                </div>
+            </div>
+            <div onClick={loadChat} className="friendMessage cursor-pointer flex flex-row h-40 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300">
+                <div className="left h-full w-1/12 flex justify-end">
+                    <p
+                        className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">5</p>
+                    <img className="profile rounded-2xl invisible 2xl:visible" src={profile3}/>
+                </div>
+                <div className="right w-4/5 flex flex-col justify-around">
+                    <div className="top flex flex-row justify-between">
+                        <div className="text-3xl font-semibold">小学同学X</div>
+                        <div>{changeTime(new Date())}</div>
+                    </div>
+                    <div className="btm text-lg">好兄弟，借我50。</div>
+                </div>
+            </div>
+            <div onClick={loadChat} className="friendMessage cursor-pointer flex flex-row h-40 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300">
+                <div className="left h-full w-1/12 flex justify-end">
+                    <p
+                        className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">1</p>
+                    <img className="profile rounded-2xl invisible 2xl:visible" src={profile5}/>
+                </div>
+                <div className="right w-4/5 flex flex-col justify-around">
+                    <div className="top flex flex-row justify-between">
+                        <div className="text-3xl font-semibold">快递小哥</div>
+                        <div>{changeTime(new Date())}</div>
+                    </div>
+                    <div className="btm text-lg">你好，你有一个快递到了，请问你现在在家吗，方便来楼下拿一下吗？？？？？？？？？？？？？？？</div>
+                </div>
+            </div>
+            <div onClick={loadChat} className="friendMessage cursor-pointer flex flex-row h-40 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300">
+                <div className="left h-full w-1/12 flex justify-end">
+                    <p
+                        className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">{99}</p>
+                    <img className="profile rounded-2xl invisible 2xl:visible" src={profile4}/>
+                </div>
+                <div className="right w-4/5 flex flex-col justify-around">
+                    <div className="top flex flex-row justify-between">
+                        <div className="text-3xl font-semibold">人肉表情包发送机器</div>
+                        <div>{changeTime(new Date())}</div>
+                    </div>
+                    <div className="btm text-lg">[动画表情]</div>
+                </div>
+            </div>
+            <div onClick={loadChat} className="friendMessage cursor-pointer flex flex-row h-40 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300">
+                <div className="left h-full w-1/12 flex justify-end">
+                    <p
+                        className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">{1}</p>
+                    <img className="profile rounded-2xl invisible 2xl:visible" src={profile}/>
+                </div>
+                <div className="right w-4/5 flex flex-col justify-around">
+                    <div className="top flex flex-row justify-between">
+                        <div className="text-3xl font-semibold">数学老师</div>
+                        <div>{changeTime(new Date())}</div>
+                    </div>
+                    <div className="btm text-lg">666+666=666</div>
+                </div>
+            </div>
+            <div onClick={loadChat} className="friendMessage cursor-pointer flex flex-row h-40 py-6 border-b border-gray-100 hover:bg-indigo-50 delay-75 duration-300">
+                <div className="left h-full w-1/12 flex justify-end">
+                    <p
+                        className="notification bg-red-400 w-auto px-2 flex justify-center rounded-xl text-white font-semibold">{1}</p>
+                    <img className="profile rounded-2xl invisible 2xl:visible" src={profile1}/>
+                </div>
+                <div className="right w-4/5 flex flex-col justify-around">
+                    <div className="top flex flex-row justify-between">
+                        <div className="text-3xl font-semibold">初中同学</div>
+                        <div>{changeTime(new Date())}</div>
+                    </div>
+                    <div className="btm text-lg">听说有人借钱。</div>
+                </div>
+            </div>
+
         </div>
     );
 }
