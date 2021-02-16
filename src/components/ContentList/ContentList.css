@@ -42,4 +42,11 @@ div .friendMessage:active , div .friendRequest:active{
         transform: scale(2);
         opacity: 0;
                 }
-        }
+    }
+
+.request{
+    width: 80%;
+    top: 8.5rem;
+    z-index: -1;
+}
+

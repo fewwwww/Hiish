@@ -11,7 +11,7 @@ function Feed(props) {
     return (
         <div className="flex w-screen h-screen">
             <Navbar onRouteChange={props.onRouteChange} route={props.route} logo={logo} profile={profile} plus={plus} search={search}/>
-            <FeedList />
+            <FeedList onRouteChange={props.onRouteChange}/>
             <Btmbar onRouteChange={props.onRouteChange} route={props.route}/>
         </div>
     );
