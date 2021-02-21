@@ -152,7 +152,7 @@ function ContentList() {
                     </div>
                     <div className="h-40"></div>
                 </div>
-                <div className="fixed h-1/6 shadow-inner bg-indigo-50 flex flex-row items-center justify-evenly" style={{width: "70%", marginLeft: '10%',marginRight:'10%', bottom:'0px'}}>
+                <div className="fixed h-1/6 shadow-inner bg-indigo-50 flex flex-row items-center justify-evenly" style={{width: "70%", bottom:'0px'}}>
                     <img className="px-5" src={audio} />
                     <input type="text" className="rounded-xl px-5 h-1/4 w-2/3" />
                     <img className='px-5' src={emoji} />
