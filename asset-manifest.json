@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Hiish/static/css/main.5e63f98f.chunk.css",
-    "main.js": "/Hiish/static/js/main.e1b82a1d.chunk.js",
-    "main.js.map": "/Hiish/static/js/main.e1b82a1d.chunk.js.map",
+    "main.js": "/Hiish/static/js/main.2387851f.chunk.js",
+    "main.js.map": "/Hiish/static/js/main.2387851f.chunk.js.map",
     "runtime-main.js": "/Hiish/static/js/runtime-main.ab7de11c.js",
     "runtime-main.js.map": "/Hiish/static/js/runtime-main.ab7de11c.js.map",
     "static/js/2.cacd2b3b.chunk.js": "/Hiish/static/js/2.cacd2b3b.chunk.js",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.ab7de11c.js",
     "static/js/2.cacd2b3b.chunk.js",
     "static/css/main.5e63f98f.chunk.css",
-    "static/js/main.e1b82a1d.chunk.js"
+    "static/js/main.2387851f.chunk.js"
   ]
 }
